@@ -1,75 +1,88 @@
 <!DOCTYPE html>
 <html>
+<lang="en">
 <head>
+
 	<title>Eduardo Aceves Portfolio</title>
+	<link rel= "stylesheet" type= "text/css" href= "assets/css/reset.css">
+	<link rel= "stylesheet" type= "text/css" href= "assets/css/style.css">
+	
+
 </head>
 <body>
 	<!--Webpage content-->
-	<div>
-
-		<!--Header Left half-->
+	
+	<div class= "flex-container">
+	<!--Header Left half-->
 		<header>
 
-		<!--My Name-->
-		<h1>Eduardo Aceves</h1>
+			<!--My Name-->
+			<div class= "logo">Eduardo Aceves</div>
+
+			
+
+			<!--Top Navigation Bar Right-->
+			<nav>
+				<ul>
+				<!--About link in Navigation Bar Right-->
+					<li> 
+						<a href="">About</a>
+					</li>
+				<!--Portfolio link in Navigation Bar Right-->
+					<li>
+						<a href="">Portfolio</a>
+					</li>
+					<!--Contact link in Navigation Bar Right-->
+					<li>
+						<a href="">Contact</a>
+					</li>
+
+				</ul>
+			</nav>
 
 		</header>
+	</div>
 
-		<!--Top Navigation Bar Right-->
-		<nav>
-
-		<!--About link in Navigation Bar Right-->
-			<h4>About</h4>
-		<!--Portfolio link in Navigation Bar Right-->
-			<h4>Portfolio</h4>
-		<!--Contact link in Navigation Bar Right-->
-			<h4>Contact</h4>
-
-		</nav>
-		
+	<div>
 		<!--About me section on the Left half-->
-		<section>
+		<section class ="section-container">
 			<!--Article within the section to group About me sectio.\n's similar ob-->
-			<article>
+			<h2>About Me</h2>
 
 				<!--Title on Left half About me Section-->
-				<header> 
+			
+				<img class= "bio-image" src="assets/images/ProfilePic.jpg" alt="Eduardo Aceves" width="200" height="200" id= "bio-image"/>
 
-					<h2>About Me</h2>
-					
-				<header>
-
-				<!--Image in the About Me Section-->
-				<img src="/images/ProfilePic.jpeg">
-
-				<!--About Me Paragraph-->
-				<p>This is my first attempt coding a webpage by scratch. I hope is as impressive as labourous as it was to accomplish. I am a Graphic Designer living in Austin Texas, currently working at my alma mater The University of Texas at Austin. I graduated with a BA in studio art with a focus in digital art and media. Though the majority of my work is graphic design I have great interest in expanding into interactive  digital art in particular games and web applications.</p>
-
-			</article>
+				<p>This is my first attempt coding a webpage by scratch. I hope is as impressive as labourous as it was to accomplish. I am a Graphic Designer living in Austin Texas, currently working at my alma mater The University of Texas at Austin. <br>I graduated with a BA in studio art with a focus in digital art and media. Though the majority of my work is graphic design I have great interest in expanding into interactive  digital art in particular games and web applications.</p>
+	</div>
+			
 
 		</section>
 
 		<!--Aside "Connect with me"-->
-		<aside>
+		<aside class = ".connect-container ">
 			<!--Conect with me title right half-->
-			<h3>Connect with me</h3>
+			<h2>Connect with me</h2>
 
 			<!--Web Icons with imbeded links-->
 			<!--Git Hub-->
-			<img src="">
+			<img src="assets/images/github-square.png" alt="Github" width="50" height="50"/>
 			<!--Linked In-->
-			<img src="">
-			<!--Bootstrap?-->
-			<img src="">
+			<img src="assets/images/squarelinkedin.png" alt="LinkedIn" width="50" height="50"/>
+			<!--stackoverflow-->
+			<img src="assets/images/stackoverflowsquare.png" alt="Stackoverflow" width="50" height="50"/>
 
 		</aside>
-		<!--Sticky footer with Copyright 2016 Eduardo Aceves-->
-		<footer>
-			<!--Copyright text-->
-			<h6>Copyright 2016 Eduardo Aceves</h6>
-		</footer>
 
-	</div>
+	
+	
+		<!--Sticky footer with Copyright 2016 Eduardo Aceves-->
+	<footer>
+		<!--Copyright text-->
+		<h6>Copyright 2016 Eduardo Aceves</h6>
+	</footer>
+
+	
 
 </body>
 </html>

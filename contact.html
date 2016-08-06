@@ -2,49 +2,66 @@
 <html>
 <head>
 	<title>Eduardo Aceves Portfolio</title>
+	<link rel= "stylesheet" type= "text/css" href= "assets/css/reset.css">
+
+	<link rel= "stylesheet" type= "text/css" href= "assets/css/style.css">
+
 </head>
 <body>
 	<!--Webpage content-->
-	<div>
+	<div class= "flex-container">
 
 		<!--Header Left half-->
 		<header>
 
-		<!--My Name-->
-		<h1>Eduardo Aceves</h1>
+			<!--My Name-->
+			<div class= "logo">Eduardo Aceves</div>
+
+			<!--Top Navigation Bar Right-->
+			<nav>
+				<ul>
+					<!--About link in Navigation Bar Right-->
+					<li> 
+							<a href="index.html">About</a>
+					</li>
+					<!--Portfolio link in Navigation Bar Right-->
+					<li>
+							<a href="portfolio.html">Portfolio</a>
+					</li>
+						<!--Contact link in Navigation Bar Right-->
+					<li>
+							<a href="contact.html">Contact</a>
+						</li>
+
+				</ul>
+			</nav>
 
 		</header>
-
-		<!--Top Navigation Bar Right-->
-		<nav>
-
-		<!--About link in Navigation Bar Right-->
-			<h4>About</h4>
-		<!--Portfolio link in Navigation Bar Right-->
-			<h4>Portfolio</h4>
-		<!--Contact link in Navigation Bar Right-->
-			<h4>Contact</h4>
-
-		</nav>
+	</div>
 		
 		<!--About me section on the Left half-->
-		<section>
-		<!--Within the Section an Article to group similarcontent-->
+		<section class ="section-container">
+			<!--Within the Section an Article to group similarcontent-->
 			<article>
 
-				<header>
+				<!--Title on Left half Contact Section-->
+				<h2 id="contact1">Contact</h2>
 
-					<!--Title on Left half Contact Section-->
-					<h2>Contact</h2>
-
-				</header>
+			
 
 				<!--Contact info entry-->
 				<form action="contact_form.asp">
-  				Name: <input type="text" name="name"><br>
-  				Email: <input type="text" name="email"><br>
-  				Message: <input type="text" name="message"><br>
-  				<input type="submit" value="Submit">
+
+	  				Name: <input type="text" name="name"><br>
+
+	  				Email: <input type="text" name="email"><br>
+
+	  				Message: <input id= "message-button" type="text" name="message"><br>
+	  				<br>
+	  				<br>
+
+  				<input id= "submit-button" type="submit" value="Submit">
+
 				</form>
 
 			</article>
@@ -52,26 +69,27 @@
 		</section>
 
 		<!--Aside "Connect with me"-->
-		<aside>
+		<aside class = ".connect-container" >
 			<!--Conect with me title right half-->
-			<h3>Connect with me</h3>
+			<h2 >Connect with me</h2>
 
 			<!--Web Icons with imbeded links-->
 			<!--Git Hub-->
-			<img src="">
+			<img class= "icons" src="assets/images/github-square.png" alt="Github" width="60" height="60"/>
 			<!--Linked In-->
-			<img src="">
-			<!--Bootstrap?-->
-			<img src="">
+			<img class= "icons" src="assets/images/squarelinkedin.png" alt="LinkedIn" width="60" height="60"/>
+			<!--stackoverflow-->
+			<img class= "icons" src="assets/images/stackoverflowsquare.png" alt="Stackoverflow" width="60" height="60"/>
 
 		</aside>
+
 		<!--Sticky footer with Copyright 2016 Eduardo Aceves-->
 		<footer>
 			<!--Copyright text-->
 			<h6>Copyright 2016 Eduardo Aceves</h6>
 		</footer>
 
-	</div>
+	
 
 </body>
 </html>
